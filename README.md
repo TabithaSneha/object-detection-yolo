@@ -2,7 +2,7 @@
 
 ***
 
-In this project, the YOLO algorithm has been implemented on the PASCAL VOC Dataset for the purpose of Object Detection.
+In this project, the YOLO algorithm has been implemented on the PASCAL VOC Dataset for the purpose of object detection of real-time objects.
 
 ## Introduction:-
 
