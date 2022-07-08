@@ -15,10 +15,10 @@ YOLO (You Only Look Once) is a state-of-the-art algorithm for Object Detection t
 * If the object's midpoint appears in a grid cell, then that cell will be responsible for detecting it.
 * Each grid cell outputs a prediction with B Bounding Boxes and provides their corresponding confidence scores.
 * The Bounding Box is in the form of [x, y, w, h], where (x, y) are the coordinates of the object midpoint in the cell relative to the cell and (w, h) is the width and height of the object also relative to the cell.
-* The ouput predictions of each cell are encoded as follows: [S x S x (5*B + C)], where C is number of class probabilities.
+* The ouput predictions of each cell are encoded as follows: [S x S x (5*B + C)], where C is the number of class probabilities.
 * For evaluating YOLO on PASCAL VOC, we use S = 7, B = 2 (for Wide and Tall Bounding Boxes). PASCAL VOC has 20 labelled classes so C = 20. Thus, the final prediction is a 7 × 7 × 30 tensor.
 * **Intersection Over Union**: A popular metric to measure localization accuracy by dividing the intersecting area of the bounding box and ground truth box with the area of its union. Larger the IOU, better is the prediction.
-*  **Non Maximal Suppression**: Since multiple cells can contain one object and each of them would predict their bounding boxes for it, NMS threshold is used suppress those bounding boxes with lower confidence scores.
+*  **Non Maximal Suppression**: Since multiple cells can contain one object and each of them would predict their bounding boxes for it, NMS threshold is used to suppress those bounding boxes with lower confidence scores.
 *  **Model Architecture of YOLO v1**: The detection network has 24 convolutional layers followed by 2 fully connected layers. Alternating 1 × 1 convolutional layers reduce the features space from preceding layers. The size of the input image is 448 x 448 x 3, which eventually comes down to 7 x 7 x 30.
 ![Pic](https://i.imgur.com/oyBoc1y.png)
 Image Source: [You Only Look Once: Unified, Real-Time Object Detection](https://pjreddie.com/media/files/papers/yolo_1.pdf)
