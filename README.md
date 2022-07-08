@@ -27,8 +27,9 @@ Image Source: [You Only Look Once: Unified, Real-Time Object Detection](https://
   * Object Loss: Mean squared error of the probability that an object is present in the cell or not.
   * No Object Loss: Mean squared error of the probabilty that an object is not present in the cell.
   * Class Loss: Mean squared error of the predictions of the class probabilities of the object.
-![Pic](https://i.imgur.com/lOB3j7E.png)
-Image Source: [You Only Look Once: Unified, Real-Time Object Detection](https://pjreddie.com/media/files/papers/yolo_1.pdf)
+   <img src="https://i.imgur.com/lOB3j7E.png" height="400" width="600" >
+
+  Image Source: [You Only Look Once: Unified, Real-Time Object Detection](https://pjreddie.com/media/files/papers/yolo_1.pdf)
 * **Mean Average Precision**: The Average Precision (AP) is calculated as the area under the Precision-Recall curve for a set of predictions per class. The average of this value taken over all classes called mean Average Precision (mAP) is calculated.
 
 ### Libraries used:-
