@@ -12,7 +12,7 @@ YOLO (You Only Look Once) is a state-of-the-art algorithm for Object Detection t
 ### Working of the YOLO Algorithm:
 
 * **Residual Boxes**: The input image is first split into SxS grids.
-* If the object's midpoint appears in one grid cell, then that cell will be responsible for detecting it.
+* If the object's midpoint appears in a grid cell, then that cell will be responsible for detecting it.
 * Each grid cell outputs a prediction with B Bounding Boxes and provides their corresponding confidence scores.
 * The Bounding Box is in the form of [x, y, w, h], where (x, y) are the coordinates of the object midpoint in the cell relative to the cell and (w, h) is the width and height of the object also relative to the cell.
 * The ouput predictions of each cell are encoded as follows: [S x S x (5*B + C)], where C is number of class probabilities.
